@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minWidth="750.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quotations_cbr.AppController">
+   <children>
+      <HBox alignment="CENTER">
+         <children>
+            <ChoiceBox fx:id="choiceBox" minHeight="-Infinity" minWidth="-Infinity" />
+            <TextField fx:id="name" editable="false" minWidth="-Infinity" prefWidth="250.0" />
+            <DatePicker fx:id="dateFrom" />
+            <DatePicker fx:id="dateTo" layoutX="435.0" layoutY="10.0" />
+            <Button fx:id="executionButton" mnemonicParsing="false" onMouseClicked="#onExecutionButtonClick" text="Выполнить" />
+         </children>
+      </HBox>
+      <TableView fx:id="table" >
+        <columns>
+            <TableColumn fx:id="firstColumn" prefWidth="238.0" text="Значение" />
+            <TableColumn fx:id="secondColumn" prefWidth="268.0" text="Дата" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>
